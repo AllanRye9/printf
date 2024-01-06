@@ -2,26 +2,37 @@
 
 int	main()
 {
-    int x = -100;
-    unsigned int p = 1000;
-    char c = 'c';
-    int y = -2451;
-    unsigned long k = 1255522225552;
-    unsigned long w = 1255522225552;
-    char d[] = "hello world today";
-    char t = '%';
-    char a[] = "hello";
-	ft_printf("%s\n", d);
-    ft_printf("%d\n", x);
-    ft_printf("%i\n", y);
-    ft_printf("%c\n", c);
-    ft_printf("%u\n", p);
-    ft_printf("%x\n", k);
-    ft_printf("%X\n", w);
-    ft_printf("%%\n", t);
-    ft_printf("%p\n", a);
-    ft_printf("%X\n", 55952632);
-    ft_printf("%x\n", 665412684511);
-    ft_printf("%i\n", 45);
+	char *str;
+	char er;
+    int age = 25;
+    char *point;
+    int x, y, k, p, c;
+
+	str = &er;
+	str = "hello, worldz";
+    point = "abc";
+    x = 7;
+    y =12;
+    k = 9;
+    p = 5;
+    c = 24;
+    ft_printf ( "I am %d years old\n", age );
+	ft_printf ( "I am %d\n", 0 );
+	ft_printf ("%d",-7);
+	ft_printf("%x\n",1560133635);
+	ft_printf("%x\n",98855);
+	ft_printf ("%d\n",-2035065302);
+	ft_printf ( "I am %d years old\n", age );
+	ft_printf ( "I am %d years old\n", age );
+	printf ( "x is %d and y is %d k is %d and p is %d\n", x, y, k, p );
+	ft_printf ( "the address %p is here\n", *point );
+	ft_printf ( "the address %p, %p, %p,is here\n", NULL, NULL, NULL );
+	c = ft_printf ( "I am %d years old\n", age );
+	printf ( "Number is %d \n", c );
+	ft_printf ( "Number is %d \n", c );
+	int w = ft_printf("\n---\n%c\n---\n%s\n%d\n%i\n%p\n%u\n%x\n%X", 'a', "string", 42, 42, &er, -42, 5,5);
+	int t = printf("\n---\n%c\n---\n%s\n%d\n%i\n%p\n%u\n%x\n%X", 'a', "string", 42, 42, &er, -42, 5,5);
+	// printf("%c", NULL);
+	 printf("\n\n\n\nft res = %d\nprint res = %d\n", w, t);
 return (0);
 }

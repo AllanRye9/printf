@@ -6,7 +6,7 @@ INCLUDE = ft_printf.h
 
 CFLAGS =  -Wall -Wextra -Werror
 
-SRCS = ft_printf_char.c ft_printf_interger.c ft_printf_pointer.c ft_printf_specifier.c ft_printf_str.c ft_printf.c 
+SRCS = main.c ft_printf_char.c ft_printf_interger.c ft_printf_pointer.c ft_printf_specifier.c ft_printf_str.c ft_printf.c 
 
 OBJS_SRCS= $(SRCS:%.c=%.o)
 
